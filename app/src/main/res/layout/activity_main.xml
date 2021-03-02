@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/heig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Calc"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="78dp"
+        android:layout_toStartOf="@+id/weight"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/Heig"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/height"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="66dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/weight"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Calc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="76dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/height"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Weig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/heig"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="68dp"
+        android:layout_toStartOf="@+id/weight"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/Weig"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="255dp"
+        android:text="@string/Calc" />
+
+
+</RelativeLayout>
